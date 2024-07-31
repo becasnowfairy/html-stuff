@@ -68,7 +68,9 @@ img {
     object-fit: cover;
     margin-bottom: 10px;
 }
-
+.texto{
+    width: 60%;
+}
 form {
     display: flex;
     flex-direction: column;
