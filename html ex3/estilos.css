@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+ body {
+ margin: 150px;
+ font-family: 'Roboto Mono', sans-serif;
+ font-size: 0.9em;
+ }
+ table {
+ width: 525px;
+ border-collapse: collapse;
+ margin-left: 25px;
+ }
+ tr, td, th {
+ border: 1px solid #343434;
+ }
+ th {
+ height: 25px;
+ }
+ td {
+ text-align: center;
+ }
+tfoot td {
+    text-align: end;
+    height: 55px;
+}

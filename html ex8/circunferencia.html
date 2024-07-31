@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Circunferencia</title>
+    <script>
+      function calcularCircunferencia() {
+        // Obtém o valor do raio a partir do input
+        var raio = document.getElementById("radius").value;
+
+        // Verifica se o valor é válido
+        if (raio <= 0 || isNaN(raio)) {
+          alert("Por favor, insira um valor de raio válido!");
+          return;
+        }
+
+        // Converte o valor para número
+        raio = parseFloat(raio);
+
+        // Calcula o perímetro e a área
+        var perimetro = 2 * Math.PI * raio;
+        var area = Math.PI * raio * raio;
+
+        // Exibe os resultados na página
+        document.getElementById("perimeter").textContent =
+          "Perímetro: " + perimetro.toFixed(2);
+        document.getElementById("area").textContent =
+          "Área: " + area.toFixed(2);
+      }
+    </script>
+  </head>
+  <body>
+    <main>
+      <h1>Cálculo do perímetro e da área de uma circunferência</h1>
+      <label for="radius">Raio:</label>
+      <input type="number" id="radius" placeholder="Insira o valor do raio" />
+      <div style="clear: both"></div>
+      <button onclick="calcularCircunferencia()">Calcular</button>
+      <h2>Resultados:</h2>
+      <p id="perimeter">Perímetro:</p>
+      <p id="area">Área:</p>
+    </main>
+  </body>
+  <footer>
+    <a href="index.html">Voltar à página inicial</a>
+  </footer>
+</html>

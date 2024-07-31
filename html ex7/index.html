@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <form id="contacto" action="" method="post">
+        <fieldset>
+            <legend>Dados para contacto</legend>
+            <table>
+                <tr>
+                    <th class="legenda">Nome</th>
+                    <td><input type="text" id="textNome" placeholder="Nome" required /></td>
+                </tr>
+                <tr>
+                    <th class="legenda">Morada</th>
+                    <td><input type="text" id="textMorada" placeholder="Morada" required /></td>
+                </tr>
+                <tr>
+                    <th class="legenda">Código postal</th>
+                    <td>
+                        <input type="tel" id="textCodigoPostal" required placeholder="1234-567"
+                            pattern="[1-9][0-9]{3}|[1-9][0-9]{3}[-][0-9]{3}" />
+                    </td>
+                </tr>
+                <tr>
+                    <th class="legenda">Email</th>
+                    <td><input type="email" id="textEmail" required placeholder="email" /></td>
+                </tr>
+                <tr>
+                    <th class="legenda">Telemóvel</th>
+                    <td>
+                        <input type="tel" id="textTelemovel" required placeholder="9......"
+                            pattern="9(1|2|3|6)[0-9]{7}" maxlength="9" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" id="buttonEnviar" value="Enviar" />
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

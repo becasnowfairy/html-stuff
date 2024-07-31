@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Ano</title>
+    <script>
+      function verificarAnoBissexto() {
+        var ano = document.getElementById("ano").value;
+        var resultado = document.getElementById("resultado");
+
+        if (isNaN(ano)) {
+          resultado.textContent = "Por favor, digite um número válido.";
+          return;
+        } else if (ano % 400 === 0 || (ano % 4 === 0 && ano % 100 !== 0)) {
+          resultado.textContent = "Tipo: Ano bissexto.";
+        } else {
+          resultado.textContent = "Tipo: Ano comum";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <main>
+      <h1>Ano Comum ou Ano Bissexto?</h1>
+      <label for="ano">Ano:</label>
+      <input type="number" id="ano" />
+      <button onclick="verificarAnoBissexto()">Verificar</button>
+      <p id="resultado">Tipo:</p>
+    </main>
+  </body>
+  <footer>
+  <a href="index.html">Voltar à página inicial</a>
+</footer></html>

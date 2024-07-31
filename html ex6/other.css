@@ -1,0 +1,48 @@
+header {
+  width: 1200px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  position: sticky;
+  background-color: #dcd3e6;
+  font-size: large;
+  padding: 1%;
+  top: 0px;
+  
+}
+nav a{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+ 
+.texto {
+  width: 60%;
+}
+
+.foto {
+  width: 40%;
+}
+
+footer {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  font-size: large;
+  bottom: 0px;
+}
+footer a{
+  background-color: #cac2d1 ;
+}

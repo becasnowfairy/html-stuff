@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Preço com Iva</title>
+    <script>
+      function calcIVA() {
+    const baseValueInput = document.getElementById('baseValue');
+    const valorIVAInput = document.querySelector('input[name="iva"]:checked');
+    const resultElement = document.getElementById('resultIVA');
+
+    if (!baseValueInput || !valorIVAInput || !resultElement) {
+        console.error('Required elements not found');
+        return;
+    }
+
+    const baseValue = parseFloat(baseValueInput.value);
+    const valorIVA = parseFloat(valorIVAInput.value);
+
+    if (isNaN(baseValue) || isNaN(valorIVA)) {
+        resultElement.innerHTML = 'Por favor, insira um valor válido';
+        return;
+    }
+
+    const valorFinal = baseValue + (valorIVA * baseValue / 100);
+    resultElement.innerHTML = `Valor final; ${valorFinal.toFixed(2)}`;
+}
+    </script>
+  </head>
+  <body>
+    <main>
+        <h1> Preço + IVA </h1>
+    <div>
+        <form>
+            <label for="baseValue">Valor base</label>
+            <input type="text" id="baseValue" placeholder="Introduza o valor base">
+            <br>
+
+            <input type="radio" id="iva6" value="6" name="iva"> 6 %
+            <br>
+
+            <input type="radio" id="iva13" value="13" name="iva"> 13 %
+            <br>
+
+            <input type="radio" id="iva23" value="23" name="iva"> 23 %
+        </form>
+
+    </div>
+    <div class="resultconfigs">
+        <button type="button" onclick="calcIVA()"> Calcular </button>
+        <p id="resultIVA"> </p>
+    </div>
+</div> 
+</main>
+  </body>
+  <footer>
+    <a href="index.html">Voltar à página inicial</a>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Formularios</title>
+    <script>
+      function add() {
+        var n1 = 0,
+          n2 = 0,
+          r = 0;
+        n1 = parseInt(document.getElementById("valor1").value);
+        n2 = parseInt(document.getElementById("valor2").value);
+        r = n1 + n2;
+        document.getElementById("resultado").innerText = r;
+      }
+      function sub() {
+        var n1 = 0,
+          n2 = 0,
+          r = 0;
+        n1 = parseInt(document.getElementById("valor1").value);
+        n2 = parseInt(document.getElementById("valor2").value);
+        r = n1 - n2;
+        document.getElementById("resultado").innerText = r;
+      }
+      function div() {
+        var n1 = 0,
+          n2 = 0,
+          r = 0;
+        n1 = parseInt(document.getElementById("valor1").value);
+        n2 = parseInt(document.getElementById("valor2").value);
+        r = n1 / n2;
+        document.getElementById("resultado").innerText = r;
+      }
+      function multi() {
+        var n1 = 0,
+          n2 = 0,
+          r = 0;
+        n1 = parseInt(document.getElementById("valor1").value);
+        n2 = parseInt(document.getElementById("valor2").value);
+        r = n1 * n2;
+        document.getElementById("resultado").innerText = r;
+      }
+    </script>
+  </head>
+  <body>
+    <main>
+      <h1>Operações Aritméticas</h1>
+      <input type="text" id="valor1" />
+      <input type="text" id="valor2" />
+
+      <div style="clear: both"></div>
+      <button type="button" onclick="add()">+</button>
+      <button type="button" onclick="sub()">-</button>
+      <button type="button" onclick="div()">/</button>
+      <button type="button" onclick="multi()">*</button>
+
+      <p id="resultado"></p>
+    </main>
+  </body>
+  <footer>
+    <a href="index.html">Voltar à página inicial</a>
+  </footer>
+</html>
