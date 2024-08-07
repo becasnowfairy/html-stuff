@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array 1</title>
+    <script>
+      const numeros = [2, 5, 6, 7, 2, 5, 1, 10];
+      document.getElementById("valores").innerText = numeros.join(" | ");
+      let soma = 0;
+      for (let i = 0; i < numeros.length; i++) {
+        soma += numeros[i];
+      }
+      document.getElementById("soma").innerText = soma;
+      let media = soma / numeros.length;
+      document.getElementById("media").innerText = media.toFixed(2);
+      let menor = numeros[0],
+        maior = numeros[0];
+      for (let i = 1; i < numeros.length; i++) {
+        if (numeros[i] < menor) menor = numeros[i];
+        if (numeros[i] > maior) maior = numeros[i];
+      }
+      document.getElementById("menor").innerText = menor;
+      document.getElementById("maior").innerText = maior;
+      let contador_negativos = 0;
+      for (let i = 1; i < numeros.length; i++) {
+        if (numeros[i] < 0) contador_negativos++;
+      }
+      document.getElementById("negativos").innerText = contador_negativos;
+      //ascendente
+      numeros.sort((a, b) => a - b);
+      document.getElementById("ascendente").innerText = numeros.join(" | ");
+      numeros.reverse();
+      document.getElementById("descendente").innerText = numeros.join(" | ");
+    </script>
+  </head>
+  <body>
+    <body>
+      <h1>Array</h1>
+      <p><strong> Valores -</strong> <span id="valores"></span></p>
+      <p><strong> Soma=</strong> <span id="soma"></span></p>
+      <p><strong> Media=</strong> <span id="media"></span></p>
+      <p>
+        <strong> Menor = </strong> <span id="menor"></span>
+        <strong>, Maior = </strong><span id="maior"></span>
+      </p>
+      <p>
+        <strong>Total de negativos = </strong> <span id="negativos"></span>
+        <strong>, total de positivos = </strong><span id="positivos"></span>
+      </p>
+      <p>
+        <strong>Ordenação ascendente -</strong> <span id="ascendente"></span>
+      </p>
+      <p>
+        <strong>Ordenação descendente -</strong> <span id="descendente"></span>
+      </p>
+    </body>
+  </body>
+</html>
