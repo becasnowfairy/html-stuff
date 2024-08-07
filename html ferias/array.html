@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Array 1</title>
     <script>
-      const numeros = [2, 5, 6, 7, 2, 5, 1, 10];
-      document.getElementById("valores").innerText = numeros.join(" | ");
+     /* const numeros = [2, 5, 6, 7, 2, 5, 1, 10];
+      document.getElementById("valores").innerText = numeros.join(" | ");*/
       let soma = 0;
       for (let i = 0; i < numeros.length; i++) {
         soma += numeros[i];
@@ -39,6 +39,10 @@
     <body>
       <h1>Array</h1>
       <p><strong> Valores -</strong> <span id="valores"></span></p>
+      <script>
+        const numeros = [2, 5, 6, 7, 2, 5, 1, 10];
+        document.getElementById('valores').innerText = numeros.join(' | ');
+        </script>
       <p><strong> Soma=</strong> <span id="soma"></span></p>
       <p><strong> Media=</strong> <span id="media"></span></p>
       <p>
