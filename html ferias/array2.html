@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array 2</title>
+  </head>
+  <body>
+    <script>
+        let nome = prompt("Defina o seu nome:");
+        const nomes = nome.split(/\s/);
+  
+        const email1 = `${nomes[0].toLowerCase()}.${nomes[nomes.length - 1].toLowerCase()}@email.com`;
+        const email2 = `${nomes[0].charAt(0).toLowerCase()}${nomes[nomes.length - 1].toLowerCase()}@email.com`;
+        const email3 = `${nomes[0].toLowerCase()}.${nomes.slice(1, -1).map(nome => nome.charAt(0).toLowerCase()).join('.')}.${nomes[nomes.length - 1].toLowerCase()}@email.com`;
+        const email4 = `${nomes[0].toLowerCase()}.${nomes.slice(1, -1).map(nome => nome.charAt(nome.length - 1).toLowerCase()).join('.')}.${nomes[nomes.length - 1].toLowerCase()}@email.com`;
+  
+        alert(`Email 1: ${email1}\nEmail 2: ${email2}\nEmail 3: ${email3}\nEmail 4: ${email4}`);
+      </script>
+  </body>
+</html>
