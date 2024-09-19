@@ -1,0 +1,19 @@
+#country {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 800px; /* adjust the max width to your liking */
+    margin: 40px auto; /* add some margin to create some space */
+    padding: 20px; /* add some padding to create some space */
+    background-color: #f9f9f9; /* add a light gray background color */
+    border: 1px solid #ddd; /* add a light gray border */
+    border-radius: 10px; /* add some rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* add some subtle shadow */
+  }
+  
+  .btn {
+    font-size: 12px;
+    padding: 2px 4px;
+    margin: 2px;
+  }
