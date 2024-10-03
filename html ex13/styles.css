@@ -102,7 +102,7 @@
 }
 
 #lista4 ol ol ol li {
-  counter-increment: none;
+  counter-increment: subsubitem;
 }
 
 #lista4 ol ol li {
