@@ -1,0 +1,68 @@
+.lista1 {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.lista1 li {
+  background-color: #29487d;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.lista1 li:hover {
+  background-color: #007bff;
+}
+
+.lista2 {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.country-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.country-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.country-list li img.flag {
+  width: 40px; /* Tamanho da bandeira */
+  height: auto;
+  margin-right: 10px;
+  border: 1px solid #ccc; /* Borda para as bandeiras */
+}
+
+.social-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.social-list li img.icon {
+  width: 24px; /* Tamanho do ícone */
+  height: auto;
+  margin-right: 10px;
+}
+
+ol {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+ol ol {
+  margin-left: 20px;
+}
