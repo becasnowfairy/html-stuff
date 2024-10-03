@@ -59,10 +59,14 @@
 }
 
 ol {
-  list-style-type: none;
-  padding-left: 20px;
+  list-style-type: decimal;
 }
-
 ol ol {
-  margin-left: 20px;
+  list-style-type: decimal;
+}
+ol ol ol {
+  list-style-type: decimal;
+}
+ol ol ol ol {
+  list-style-type: decimal;
 }
