@@ -92,5 +92,6 @@
 }
 
 #lista4 ol ol ol li:before {
-  content: counters(item, ".") "." counters(subitem, ".") "." counters(subsubitem, ".") ". ";
+  content: counters(item, ".") "." counters(subitem, ".") "."
+    counters(subsubitem, ".") ". ";
 }
