@@ -58,15 +58,65 @@
   margin-right: 10px;
 }
 
-ol {
-  list-style-type: decimal;
+#lista4 ol {
+  counter-reset: item;
+  list-style-type: none;
 }
-ol ol {
-  list-style-type: decimal;
+
+#lista4 li {
+  counter-increment: item;
 }
-ol ol ol {
-  list-style-type: decimal;
+
+#lista4 li:before {
+  content: counters(item, ".") ". ";
 }
-ol ol ol ol {
-  list-style-type: decimal;
+
+#lista4 ol ol {
+  counter-reset: subitem;
+  list-style-type: none;
+}
+
+#lista4 ol ol li {
+  counter-increment: subitem;
+}
+
+#lista4 ol ol li:before {
+  content: counters(item, ".") "." counters(subitem, ".") ". ";
+}
+
+#lista4 ol ol ol {
+  counter-reset: subsubitem;
+  list-style-type: none;
+}
+
+#lista4 ol ol ol li {
+  counter-increment: subsubitem;
+}
+
+#lista4 ol ol ol li:before {
+  content: counters(item, ".") "." counters(subitem, ".") "." counters(subsubitem, ".") ". ";
+}
+
+#lista4 ol ol ol ol {
+  display: none;
+}
+
+#lista4 ol ol ol li {
+  counter-increment: none;
+}
+
+#lista4 ol ol li {
+  counter-increment: subitem;
+}
+
+#lista4 ol ol li:before {
+  content: counters(item, ".") "." counters(subitem, ".") ". ";
+}
+
+#lista4 ol li {
+  counter-increment: item;
+}
+
+#lista4 ol li:before {
+  content: counters(item, ".") ". ";
 }
