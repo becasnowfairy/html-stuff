@@ -1,0 +1,38 @@
+table {
+    width: 600px;
+    margin: 0 auto; /* Centraliza a tabela na página */
+    border-collapse: collapse;
+}
+
+caption {
+    caption-side: top;
+    padding: 25px 0 15px;
+    text-align: center;
+    color: #01327a;
+    font-weight: bold;
+}
+
+th, td {
+    text-align: center;
+    border: 1px solid #e2e2e2;
+    height: 75px;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #e2e2e2;
+}
+
+td:hover {
+    background-color: #01327a;
+    color: #e2e2e2;
+}
+
+tr:first-child th:first-child {
+    border: none;
+    background-color: transparent;
+}
+
+th:nth-child(1), th:nth-child(2), th:nth-child(3), th:nth-child(4) {
+    text-align: center;
+}

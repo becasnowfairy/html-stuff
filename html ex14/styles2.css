@@ -1,0 +1,41 @@
+table {
+    width: 600px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+caption {
+    caption-side: top;
+    padding: 20px;
+    background-color: #36709a;
+    color: #fff;
+    font-weight: bold;
+}
+
+thead th {
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4b4b4b;
+}
+
+tbody tr {
+    height: 30px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #c2c2c2;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+tbody td:first-child {
+    width: 40px;
+    text-align: center;
+}
+
+tbody td:not(:first-child) {
+    width: 140px;
+    text-align: center;
+}
+
