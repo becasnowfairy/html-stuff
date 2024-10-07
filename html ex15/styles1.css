@@ -1,0 +1,45 @@
+/* Base Colors */
+:root {
+    --header-title-color: #cedeeb;
+    --base-bg-options: #f7dada;
+    --base-text-options: rgb(164, 179, 209);
+}
+
+body {
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.title h1 {
+    background-color: var(--header-title-color);
+    color: rgb(201, 223, 223)azure;
+    line-height: 75px;
+}
+
+.base {
+    display: grid;
+    grid-template-columns: 200px auto;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.opcoes {
+    background-color: var(--base-bg-options);
+    padding-top: 15px;
+    color: var(--base-text-options);
+}
+
+.opcoes ol {
+    list-style-type: none;
+}
+
+.opcoes ol a {
+    text-decoration: none;
+}
+
+.footer {
+    background-color: var(--header-title-color);
+    color: rgb(201, 223, 223)azure;
+    line-height: 35px;
+    padding: 10px;
+}

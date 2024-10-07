@@ -1,41 +1,59 @@
-table {
+
+:root {
+    --table-bg-caption: #36709a;
+    --table-header-text-color: #fff;
+    --table-bg-row-country: #DDDDDD;
+    --table-bg-row-museum: #4b4b4b;
+    --table-bg-odd-row: #c2c2c2;
+
+}
+
+.table {
     width: 600px;
-    margin: 0 auto;
-    border-collapse: collapse;
-}
-
-caption {
-    caption-side: top;
-    padding: 20px;
-    background-color: #36709a;
-    color: #fff;
-    font-weight: bold;
-}
-
-thead th {
-    text-align: center;
-    font-weight: bold;
-    color: #fff;
-    background-color: #4b4b4b;
-}
-
-tbody tr {
-    height: 30px;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: #c2c2c2;
-    font-weight: bold;
+    border-collapse: separate;
     vertical-align: middle;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 auto;
 }
 
-tbody td:first-child {
+.table-title {
+    padding: 20px;
+    font-weight: bold;
+    color: var(--table-bg-caption);
+}
+
+
+.theader {
+    padding: 5px;
+    font-weight: bold;
+}
+
+
+.theader-empty {
+    visibility: hidden;
+}
+
+
+.theader-country {
+    background-color: var(--table-bg-row-country);
+}
+
+
+.theader-museum {
+    background-color: var(--table-bg-row-museum);
+    color: var(--table-header-text-color);
+}
+
+.theader-museum th {
     width: 40px;
-    text-align: center;
 }
 
-tbody td:not(:first-child) {
+.tbody tr td {
     width: 140px;
-    text-align: center;
 }
 
+.tbody tr:nth-child(odd) {
+    background-color: var(--table-bg-odd-row);
+    font-weight: bold;
+}

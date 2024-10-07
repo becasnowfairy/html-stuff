@@ -1,0 +1,47 @@
+
+:root {
+    --header-title-color: #a2c3db;
+    --base-bg-options: #ebafaf;
+    --base-text-options: rgb(71, 110, 182);
+}
+
+body {
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.title h1 {
+    background-color: var(--header-title-color);
+    color: rgb(201, 223, 223);
+    line-height: 75px;
+}
+
+.base {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.table-images td {
+    text-align: center;
+}
+
+.table-images img {
+    width: 150px;
+}
+
+.table-footer {
+    margin-top: 25px;
+}
+
+#mainImg {
+    width: 500px;
+    padding-bottom: 10px;
+}
+
+.footer {
+    background-color: var(--header-title-color);
+    color: rgb(201, 223, 223);
+    line-height: 35px;
+    padding: 10px;
+}
